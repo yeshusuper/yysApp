@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">@dimen/font_36</item>
+        <item name="android:textColor">@color/black_555555</item>
+    </style>
+
+    <style name="ActivityTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="DialogTheme" parent="ActivityTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+
+    <style name="RightClassSelectItemLine">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="RightClassSelectItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selecter_right_class_select</item>
+    </style>
+
+    <style name="RightClassSelectItemGrp">
+        <item name="android:layout_weight">0.26</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+
+
+    <style name="LineY">
+        <item name="android:background">@color/red_e82c1d</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1px</item>
+    </style>
+
+    <style name="LineX_b2b2b2">
+        <item name="android:background">@color/gray_b2b2b2</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="LineY_b2b2b2">
+        <item name="android:background">@color/gray_b2b2b2</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1px</item>
+    </style>
+
+    <style name="LineX_dddddd">
+        <item name="android:background">@color/gray_dddddd</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="LineY_dddddd">
+        <item name="android:background">@color/gray_dddddd</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1px</item>
+    </style>
+
+</resources>
