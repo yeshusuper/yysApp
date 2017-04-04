@@ -1,5 +1,6 @@
 package com.fuliaohui.yys;
 
+import android.content.Intent;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,6 +23,15 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 llLogin.setVisibility(View.GONE);
                 llRegister.setVisibility(View.VISIBLE);
+            }
+        });
+
+        findViewById(R.id.btn_register).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, CaigouListActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 

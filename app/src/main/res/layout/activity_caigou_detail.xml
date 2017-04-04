@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.fuliaohui.yys.widget.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                tools:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/caigou_big_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"/>
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/muil_img"
+                    android:layout_width="105dp"
+                    android:layout_height="12dp"
+                    android:paddingBottom="6dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="商品名称：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="仿珍珠" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="分类：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="辅料/珠饰" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="区域：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="中大纺织商圈" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/CaigouDetailInfoLine"
+                    android:gravity="center_vertical">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="颜色："/>
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/shape_product_color_1"/>
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="10dp"
+                        android:text="c030"/>
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/shape_product_color_2"/>
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="10dp"
+                        android:text="c031"/>
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/shape_product_color_3"/>
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="10dp"
+                        android:text="c032"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="备注：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="我这要这几种颜色的，其他勿扰" />
+                </LinearLayout>
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="数量：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="10000个" />
+                </LinearLayout>
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="单价：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="0.0095元/个" />
+                </LinearLayout>
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="货期：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="未限制" />
+                </LinearLayout>
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="物流：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="顺丰物流" />
+                </LinearLayout>
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="物流电话：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="13600000000" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView style="@style/LineX_b2b2b2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp">
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/font_36"
+                    android:text="好评率：98%"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/font_36"
+                    android:textColor="@color/red_e82c1d"
+                    android:text="差评率：2%"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_quyang"
+                android:textSize="@dimen/font_45"
+                android:text="报价"
+                android:textColor="@color/white_ffffff"
+                android:background="@color/red_e82c1d"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

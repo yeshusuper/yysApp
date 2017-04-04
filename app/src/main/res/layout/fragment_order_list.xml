@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_select_btn"
+        android:background="@color/white_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_555555"
+            android:textSize="@dimen/font_45"
+            android:text="筛选方式"
+            />
+        <ImageView style="@style/IconSelect" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/tv_select_bottom_line"
+        android:layout_below="@id/ll_select_btn"
+        style="@style/LineX_b2b2b2" />
+
+    <ScrollView
+        android:layout_below="@id/tv_select_bottom_line"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_product_1"
+                style="@style/CaigouListItemLine">
+                <LinearLayout style="@style/CaigouListItemContent">
+                    <ImageView style="@style/CaigouListItemImg"
+                        android:src="@drawable/caigou_img_1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout style="@style/CaigouListItemInfo">
+                            <TextView style="@style/CaigouListItemInfoTitle"
+                                android:text="采购：吴先生"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="10000个，报价：0.095元/个"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="交货：现货" />
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="报价时间：2017/4/4 10:00" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/red_e82c1d"
+                            android:textSize="@dimen/font_27"
+                            android:text="竞标中"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView style="@style/LineX_b2b2b2" />
+                <LinearLayout style="@style/CaigouListItemOp">
+                    <TextView style="@style/CaigouListItemOpBtn"
+                        android:id="@+id/cb_talk_1"
+                        android:text="聊一下"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_product_2"
+                style="@style/CaigouListItemLine">
+                <LinearLayout style="@style/CaigouListItemContent">
+                    <ImageView style="@style/CaigouListItemImg"
+                        android:src="@drawable/caigou_img_2"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout style="@style/CaigouListItemInfo">
+                            <TextView style="@style/CaigouListItemInfoTitle"
+                                android:text="采购：陈先生"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="9000个，报价：0.096元/个"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="交货：现货" />
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="报价时间：2017/4/5 9:00" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/red_e82c1d"
+                            android:textSize="@dimen/font_27"
+                            android:text="竞标失败\n1天后删除"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView style="@style/LineX_b2b2b2" />
+                <LinearLayout style="@style/CaigouListItemOp">
+                    <TextView style="@style/CaigouListItemOpBtn"
+                        android:visibility="invisible"
+                        android:text="聊一下"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_product_3"
+                style="@style/CaigouListItemLine">
+                <LinearLayout style="@style/CaigouListItemContent">
+                    <ImageView style="@style/CaigouListItemImg"
+                        android:src="@drawable/caigou_img_3"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout style="@style/CaigouListItemInfo">
+                            <TextView style="@style/CaigouListItemInfoTitle"
+                                android:text="采购：苏先生"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="8000个，报价：0.094元/个"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="交货：现货" />
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="报价时间：2017/4/5 12:00" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView style="@style/LineX_b2b2b2" />
+                <LinearLayout style="@style/CaigouListItemOp">
+                    <TextView style="@style/CaigouListItemOpBtn"
+                        android:id="@+id/cb_talk_2"
+                        android:text="聊一下"/>
+                    <TextView style="@style/CaigouListItemOpBtn.Current"
+                        android:text="确认订单"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_product_4"
+                style="@style/CaigouListItemLine">
+                <LinearLayout style="@style/CaigouListItemContent">
+                    <ImageView style="@style/CaigouListItemImg"
+                        android:src="@drawable/caigou_img_4"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout style="@style/CaigouListItemInfo">
+                            <TextView style="@style/CaigouListItemInfoTitle"
+                                android:text="采购：潘先生"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="9500个，报价：0.1元/个"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="交货：现货" />
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="报价时间：2017/4/5 12:10" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/red_e82c1d"
+                            android:textSize="@dimen/font_27"
+                            android:text="已发货\n待确认"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView style="@style/LineX_b2b2b2" />
+                <LinearLayout style="@style/CaigouListItemOp">
+                    <TextView style="@style/CaigouListItemOpBtn"
+                        android:id="@+id/cb_talk_3"
+                        android:text="聊一下"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_product_5"
+                style="@style/CaigouListItemLine">
+                <LinearLayout style="@style/CaigouListItemContent">
+                    <ImageView style="@style/CaigouListItemImg"
+                        android:src="@drawable/caigou_img_5"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout style="@style/CaigouListItemInfo">
+                            <TextView style="@style/CaigouListItemInfoTitle"
+                                android:text="采购：潘先生"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="9200个，报价：0.099元/个"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="交货：现货" />
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="报价时间：2017/4/3 12:00" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/red_e82c1d"
+                            android:textSize="@dimen/font_27"
+                            android:text="交易完成"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView style="@style/LineX_b2b2b2" />
+                <LinearLayout style="@style/CaigouListItemOp">
+                    <TextView style="@style/CaigouListItemOpBtn"
+                        android:id="@+id/cb_talk_4"
+                        android:text="聊一下"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/ll_select_items"
+        android:layout_below="@id/tv_select_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent60"
+        android:clickable="true"
+        android:visibility="gone">
+        <LinearLayout
+            android:background="@color/white_ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView style="@style/DropSelectItem" android:text="全部"/>
+            <TextView style="@style/LineX_b2b2b2" />
+            <TextView style="@style/DropSelectItem" android:text="竞标中"/>
+            <TextView style="@style/LineX_b2b2b2" />
+            <TextView style="@style/DropSelectItem" android:text="中标"/>
+            <TextView style="@style/LineX_b2b2b2" />
+            <TextView style="@style/DropSelectItem" android:text="待发货"/>
+            <TextView style="@style/LineX_b2b2b2" />
+            <TextView style="@style/DropSelectItem" android:text="已完成"/>
+            <TextView style="@style/LineX_b2b2b2" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

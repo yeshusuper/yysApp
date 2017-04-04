@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/gray_f2f2f2">
+            <LinearLayout
+                android:id="@+id/ll_caigou_1"
+                style="@style/CaigouListItemLine">
+                <LinearLayout style="@style/CaigouListItemContent">
+                    <ImageView style="@style/CaigouListItemImg"
+                        android:src="@drawable/caigou_img_1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout style="@style/CaigouListItemInfo">
+                            <TextView style="@style/CaigouListItemInfoTitle"
+                                android:text="辅料/珠饰：仿珍珠"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="10000个"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="好评率：100%" />
+                            <TextView style="@style/CaigouListItemInfoText.Red"
+                                android:text="差评率：0%" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView style="@style/LineX_b2b2b2" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_caigou_2"
+                style="@style/CaigouListItemLine">
+                <LinearLayout style="@style/CaigouListItemContent">
+                    <ImageView style="@style/CaigouListItemImg"
+                        android:src="@drawable/caigou_img_2"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout style="@style/CaigouListItemInfo">
+                            <TextView style="@style/CaigouListItemInfoTitle"
+                                android:text="辅料/珠饰：仿珍珠"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="8000个"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="好评率：99%" />
+                            <TextView style="@style/CaigouListItemInfoText.Red"
+                                android:text="差评率：1%" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView style="@style/LineX_b2b2b2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_caigou_3"
+                style="@style/CaigouListItemLine">
+                <LinearLayout style="@style/CaigouListItemContent">
+                    <ImageView style="@style/CaigouListItemImg"
+                        android:src="@drawable/caigou_img_3"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout style="@style/CaigouListItemInfo">
+                            <TextView style="@style/CaigouListItemInfoTitle"
+                                android:text="辅料/珠饰：仿珍珠"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="7000个"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="好评率：100%" />
+                            <TextView style="@style/CaigouListItemInfoText.Red"
+                                android:text="差评率：0%" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView style="@style/LineX_b2b2b2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_caigou_4"
+                style="@style/CaigouListItemLine">
+                <LinearLayout style="@style/CaigouListItemContent">
+                    <ImageView style="@style/CaigouListItemImg"
+                        android:src="@drawable/caigou_img_4"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout style="@style/CaigouListItemInfo">
+                            <TextView style="@style/CaigouListItemInfoTitle"
+                                android:text="辅料/珠饰：仿珍珠"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="10000个"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="好评率：98%" />
+                            <TextView style="@style/CaigouListItemInfoText.Red"
+                                android:text="差评率：2%" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView style="@style/LineX_b2b2b2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_caigou_5"
+                style="@style/CaigouListItemLine">
+                <LinearLayout style="@style/CaigouListItemContent">
+                    <ImageView style="@style/CaigouListItemImg"
+                        android:src="@drawable/caigou_img_5"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout style="@style/CaigouListItemInfo">
+                            <TextView style="@style/CaigouListItemInfoTitle"
+                                android:text="辅料/珠饰：仿珍珠"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="1000个"/>
+                            <TextView style="@style/CaigouListItemInfoText"
+                                android:text="好评率：100%" />
+                            <TextView style="@style/CaigouListItemInfoText.Red"
+                                android:text="差评率：0%" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView style="@style/LineX_b2b2b2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
