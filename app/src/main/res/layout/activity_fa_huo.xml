@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_f2f2f2">
+
+    <com.fuliaohui.yys.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView style="@style/LineX_b2b2b2" />
+    <LinearLayout style="@style/InputMuiltCheckBoxContainer"
+        android:background="@color/white_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp">
+        <LinearLayout
+            android:id="@+id/ll_type_1"
+            style="@style/InputMuiltCheckBoxItem.Boundary">
+            <TextView style="@style/InputMuiltCheckBoxItemText"
+                android:text="常规物流"/>
+            <ImageView
+                android:id="@+id/iv_type_1"
+                style="@style/InputMuiltCheckBoxItemImg" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_type_2"
+            style="@style/InputMuiltCheckBoxItem">
+            <TextView style="@style/InputMuiltCheckBoxItemText"
+                android:text="自定义物流"/>
+            <ImageView
+                android:id="@+id/iv_type_2"
+                style="@style/InputMuiltCheckBoxItemImg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white_ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_edit_express"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物流公司"
+                android:layout_marginRight="7dp"
+                android:textSize="@dimen/font_36"
+                android:textColor="@color/black_555555"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                style="@style/Input"
+                android:textColorHint="@color/gray_999999"
+                android:hint="请输入物流公司名称"
+                android:padding="10dp"
+                android:textSize="@dimen/font_36"
+                android:textColor="@color/black_555555"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:id="@+id/ll_select_express"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物流公司"
+                android:layout_marginRight="7dp"
+                android:textSize="@dimen/font_36"
+                android:textColor="@color/black_555555"
+                android:layout_gravity="center_vertical"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@drawable/shape_pub_product_img_border"
+                android:entries="@array/express">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物流单号"
+                android:layout_marginRight="7dp"
+                android:textSize="@dimen/font_36"
+                android:textColor="@color/black_555555"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                style="@style/Input"
+                android:textColorHint="@color/gray_999999"
+                android:hint="请输入物流单号"
+                android:padding="10dp"
+                android:textSize="@dimen/font_36"
+                android:textColor="@color/black_555555"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <EditText
+            style="@style/Input"
+            android:textColorHint="@color/gray_999999"
+            android:hint="发货备注：数量、颜色等"
+            android:padding="10dp"
+            android:textSize="@dimen/font_36"
+            android:textColor="@color/black_555555"
+            android:gravity="left|top"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+</LinearLayout>

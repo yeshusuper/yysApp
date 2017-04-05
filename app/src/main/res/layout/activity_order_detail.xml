@@ -39,13 +39,13 @@
             </RelativeLayout>
 
             <LinearLayout
+                tools:visibility="gone"
                 android:paddingTop="20dp"
                 android:paddingRight="20dp"
                 android:paddingLeft="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
                 <LinearLayout style="@style/CaigouDetailInfoLine">
                     <TextView style="@style/CaigouDetailInfoTitle"
                         android:text="商品名称：" />
@@ -123,6 +123,58 @@
                 </LinearLayout>
                 <LinearLayout style="@style/CaigouDetailInfoLine">
                     <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="物流价格：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="20元" />
+                </LinearLayout>
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="总价：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="120元" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView style="@style/LineX_b2b2b2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/font_36"
+                    android:text="采购：吴先生"/>
+
+                <TextView style="@style/CaigouListItemOpBtn"
+                    android:layout_height="28dp"
+                    android:id="@+id/tv_talk"
+                    android:text="聊一下"/>
+            </LinearLayout>
+            <TextView style="@style/LineX_b2b2b2" />
+
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="物流信息"
+                    android:textSize="@dimen/font_36"
+                    android:textColor="@color/black_555555"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
                         android:text="物流：" />
                     <TextView style="@style/CaigouDetailInfoContent"
                         android:text="顺丰物流" />
@@ -133,32 +185,29 @@
                     <TextView style="@style/CaigouDetailInfoContent"
                         android:text="13600000000" />
                 </LinearLayout>
-            </LinearLayout>
-            <TextView style="@style/LineX_b2b2b2" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="53dp">
-                <TextView
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textSize="@dimen/font_36"
-                    android:text="好评率：98%"/>
-                <TextView
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textSize="@dimen/font_36"
-                    android:textColor="@color/red_e82c1d"
-                    android:text="差评率：2%"/>
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="物流单号：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="1234390997127" />
+                    <TextView
+                        style="@style/CaigouDetailInfoContent"
+                        android:layout_marginLeft="20dp"
+                        android:text="查看物流信息"
+                        android:textColor="@color/red_e82c1d"/>
+                </LinearLayout>
+                <LinearLayout style="@style/CaigouDetailInfoLine">
+                    <TextView style="@style/CaigouDetailInfoTitle"
+                        android:text="已发货量：" />
+                    <TextView style="@style/CaigouDetailInfoContent"
+                        android:text="8000个" />
+                </LinearLayout>
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_baojia"
+                android:id="@+id/btn_fahuo"
                 android:textSize="@dimen/font_45"
-                android:text="报价"
+                android:text="发货"
                 android:textColor="@color/white_ffffff"
                 android:background="@color/red_e82c1d"
                 android:layout_width="match_parent"
