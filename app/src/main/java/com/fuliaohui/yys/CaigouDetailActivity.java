@@ -1,5 +1,6 @@
 package com.fuliaohui.yys;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +21,7 @@ public class CaigouDetailActivity extends AppCompatActivity {
         findViewById(R.id.btn_baojia).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TODO: 2017/4/5 跳转到报价
+                startActivity(new Intent(CaigouDetailActivity.this, BaoJiaActivity.class));
             }
         });
     }

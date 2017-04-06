@@ -20,13 +20,19 @@
         <activity
             android:name=".MainActivity"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <activity android:name=".CaigouListActivity"
+        <activity
+            android:name=".CaigouListActivity"
             android:launchMode="singleTop" />
-        <activity android:name=".CaigouDetailActivity"
+        <activity
+            android:name=".CaigouDetailActivity"
             android:launchMode="singleTop" />
-        <activity android:name=".OrderDetailActivity"
-            android:launchMode="singleTop"/>
-        <activity android:name=".FaHuoActivity"
+        <activity
+            android:name=".OrderDetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".FaHuoActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".BaoJiaActivity"
             android:launchMode="singleTop"/>
     </application>
 
