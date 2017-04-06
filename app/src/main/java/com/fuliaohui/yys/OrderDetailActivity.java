@@ -32,7 +32,7 @@ public class OrderDetailActivity extends AppCompatActivity {
         findViewById(R.id.tv_talk).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TODO: 2017/4/5 跳转到聊天
+                ChatActivity.launchChat(OrderDetailActivity.this);
             }
         });
     }

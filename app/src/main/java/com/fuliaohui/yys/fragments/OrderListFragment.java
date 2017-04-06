@@ -9,6 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.fuliaohui.yys.ChatActivity;
 import com.fuliaohui.yys.OrderDetailActivity;
 import com.fuliaohui.yys.R;
 
@@ -41,7 +42,7 @@ public class OrderListFragment extends Fragment {
         View.OnClickListener talkListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TODO: 2017/4/4 跳转到聊天
+                ChatActivity.launchChat(getContext());
             }
         };
         int[] talkIds = new int[]{ R.id.cb_talk_1, R.id.cb_talk_2, R.id.cb_talk_3, R.id.cb_talk_4 };

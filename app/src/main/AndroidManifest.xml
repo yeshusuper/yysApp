@@ -32,8 +32,10 @@
         <activity
             android:name=".FaHuoActivity"
             android:launchMode="singleTop" />
-        <activity android:name=".BaoJiaActivity"
-            android:launchMode="singleTop"/>
+        <activity
+            android:name=".BaoJiaActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ChatActivity"></activity>
     </application>
 
 </manifest>
