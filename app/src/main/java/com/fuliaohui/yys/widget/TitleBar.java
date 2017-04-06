@@ -2,10 +2,12 @@ package com.fuliaohui.yys.widget;
 
 import android.app.Activity;
 import android.content.Context;
-import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.fuliaohui.yys.R;
@@ -19,6 +21,7 @@ public class TitleBar extends FrameLayout {
     private Activity activity;
     private View llBack;
     private TextView tvRigthText;
+    private PopupWindow moreMenuPopupWindow;
 
     public TitleBar(Context context) {
         super(context);
@@ -47,20 +50,24 @@ public class TitleBar extends FrameLayout {
                     activity.finish();
             }
         });
+        tvRigthText.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (moreMenuPopupWindow == null) {
+                    View popView = inflate(getContext(), R.layout.popup_index_more, null);
+                    moreMenuPopupWindow = new PopupWindow(popView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                }
+                moreMenuPopupWindow.showAsDropDown(TitleBar.this, getWidth(), 0);
+            }
+        });
     }
 
     public void setTitle(CharSequence title){
         tvTitle.setText(title);
     }
 
-    public void setRigthText(CharSequence text, OnClickListener listener){
-        if(!TextUtils.isEmpty(text)){
-            tvRigthText.setText(text);
-            tvRigthText.setOnClickListener(listener);
-            tvRigthText.setVisibility(VISIBLE);
-        }else{
-            tvRigthText.setVisibility(GONE);
-        }
+    public void setRigthPlusVisibled(boolean visibled){
+        tvRigthText.setVisibility(visibled ? VISIBLE : GONE);
     }
 
     public void setActivity(Activity activity) {

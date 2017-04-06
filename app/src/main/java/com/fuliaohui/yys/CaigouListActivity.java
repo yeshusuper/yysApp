@@ -27,6 +27,8 @@ public class CaigouListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_caigou_list);
 
         titleBar = (TitleBar) findViewById(R.id.title_bar);
+        titleBar.setRigthPlusVisibled(true);
+
         cbCaigou = (CheckBox) findViewById(R.id.cb_caigou);
         cbOrder = (CheckBox) findViewById(R.id.cb_order);
         caigouListFragment = new CaigouListFragment();
