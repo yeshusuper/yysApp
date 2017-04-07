@@ -2,6 +2,9 @@ package com.fuliaohui.yys.widget;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
@@ -10,6 +13,7 @@ import android.widget.FrameLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
+import com.fuliaohui.yys.PublishNewProductActivity;
 import com.fuliaohui.yys.R;
 
 /**
@@ -55,7 +59,17 @@ public class TitleBar extends FrameLayout {
             public void onClick(View view) {
                 if (moreMenuPopupWindow == null) {
                     View popView = inflate(getContext(), R.layout.popup_index_more, null);
-                    moreMenuPopupWindow = new PopupWindow(popView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                    popView.findViewById(R.id.rl_pub_new).setOnClickListener(new OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            getContext().startActivity(new Intent(getContext(), PublishNewProductActivity.class));
+                            moreMenuPopupWindow.dismiss();
+                        }
+                    });
+                    moreMenuPopupWindow = new PopupWindow(popView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
+                    final ColorDrawable dw = new ColorDrawable(Color.TRANSPARENT);
+                    moreMenuPopupWindow.setBackgroundDrawable(dw);
+                    moreMenuPopupWindow.setOutsideTouchable(true);
                 }
                 moreMenuPopupWindow.showAsDropDown(TitleBar.this, getWidth(), 0);
             }

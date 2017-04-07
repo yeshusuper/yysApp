@@ -198,6 +198,35 @@
         <item name="android:background">@drawable/shape_chat_notify_bg</item>
     </style>
 
+    <style name="InputSelectContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/white_ffffff</item>
+    </style>
+    <style name="InputSelect">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:textSize">@dimen/font_36</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="InputSelect.Empty">
+        <item name="android:textColor">@color/gray_999999</item>
+    </style>
+    <style name="InputSelectLine" parent="LineX_dddddd">
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="InputSelectIcon">
+        <item name="android:layout_width">6dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:src">@drawable/icon_input_select</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
     <style name="IconSelect">
         <item name="android:src">@drawable/icon_select</item>
         <item name="android:layout_width">7dp</item>
