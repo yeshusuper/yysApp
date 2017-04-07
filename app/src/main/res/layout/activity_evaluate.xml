@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_f2f2f2">
+
+    <com.fuliaohui.yys.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@id/title_bar"
+        android:id="@+id/title_bar_line"
+        style="@style/LineX_b2b2b2" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_submit"
+        android:textSize="@dimen/font_45"
+        android:text="发布"
+        android:textColor="@color/white_ffffff"
+        android:background="@color/red_e82c1d"
+        android:layout_width="match_parent"
+        android:layout_height="49dp" />
+
+    <LinearLayout
+        android:layout_below="@id/title_bar_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ffffff"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout style="@style/InputMuiltCheckBoxContainer">
+            <LinearLayout
+                android:id="@+id/ll_quality_1"
+                style="@style/InputMuiltCheckBoxItem"
+                android:layout_marginLeft="0dp">
+                <TextView style="@style/InputMuiltCheckBoxItemText"
+                    android:text="好"/>
+                <ImageView
+                    android:id="@+id/iv_quality_1"
+                    style="@style/InputMuiltCheckBoxItemImg" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_quality_2"
+                style="@style/InputMuiltCheckBoxItem">
+                <TextView style="@style/InputMuiltCheckBoxItemText"
+                    android:text="中"/>
+                <ImageView
+                    android:id="@+id/iv_quality_2"
+                    style="@style/InputMuiltCheckBoxItemImg" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_quality_3"
+                style="@style/InputMuiltCheckBoxItem">
+                <TextView style="@style/InputMuiltCheckBoxItemText"
+                    android:text="差"/>
+                <ImageView
+                    android:id="@+id/iv_quality_3"
+                    style="@style/InputMuiltCheckBoxItemImg" />
+            </LinearLayout>
+        </LinearLayout>
+        <EditText style="@style/Input"
+            android:layout_marginTop="10dp"
+            android:padding="7dp"
+            android:hint="评价"
+            android:gravity="left|top"
+            android:textSize="@dimen/font_36"
+            android:textColor="@color/black_555555"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

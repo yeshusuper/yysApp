@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.fuliaohui.yys.ChatActivity;
+import com.fuliaohui.yys.EvaluateActivity;
 import com.fuliaohui.yys.OrderDetailActivity;
 import com.fuliaohui.yys.R;
 
@@ -62,7 +63,12 @@ public class OrderListFragment extends Fragment {
             view.findViewById(detailId).setOnClickListener(detailListener);
         }
 
-
+        view.findViewById(R.id.tv_evaluate_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), EvaluateActivity.class));
+            }
+        });
 
         return view;
     }

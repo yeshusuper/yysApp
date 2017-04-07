@@ -210,6 +210,10 @@
                     <TextView style="@style/CaigouListItemOpBtn"
                         android:id="@+id/cb_talk_4"
                         android:text="聊一下"/>
+                    <TextView
+                        android:id="@+id/tv_evaluate_1"
+                        style="@style/CaigouListItemOpBtn.Current"
+                        android:text="评价"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
