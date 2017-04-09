@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.fuliaohui.yys.PublishNewProductActivity;
 import com.fuliaohui.yys.R;
+import com.fuliaohui.yys.UserInfoActivity;
 
 /**
  * Created by lam on 2017/3/19.
@@ -64,6 +65,12 @@ public class TitleBar extends FrameLayout {
                         public void onClick(View view) {
                             getContext().startActivity(new Intent(getContext(), PublishNewProductActivity.class));
                             moreMenuPopupWindow.dismiss();
+                        }
+                    });
+                    popView.findViewById(R.id.rl_my).setOnClickListener(new OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            getContext().startActivity(new Intent(getContext(), UserInfoActivity.class));
                         }
                     });
                     moreMenuPopupWindow = new PopupWindow(popView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);

@@ -48,7 +48,11 @@
             android:name=".PublishNewProductActivity"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity android:name=".EvaluateActivity"
+        <activity
+            android:name=".EvaluateActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".UserInfoActivity"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustResize|stateHidden"/>
     </application>

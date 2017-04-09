@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_f2f2f2">
+
+    <com.fuliaohui.yys.widget.TitleBar
+        android:id="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView style="@style/LineX_b2b2b2"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout style="@style/InputSelectContainer"
+                android:layout_height="88dp"
+                android:layout_marginBottom="10dp">
+                <TextView style="@style/LineX_dddddd"/>
+                <TextView style="@style/InputSelect"
+                    android:textSize="@dimen/font_45"
+                    android:text="商户头像" />
+                <ImageView
+                    android:id="@+id/iv_face_update_icon"
+                    style="@style/InputSelectIcon" />
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@id/iv_face_update_icon"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_1"
+                    android:layout_width="67dp"
+                    android:layout_height="67dp" />
+                <TextView style="@style/InputSelectLine" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/InputSelectContainer"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp">
+                <TextView style="@style/LineX_dddddd"/>
+                <TextView style="@style/InputSelect"
+                    android:textSize="@dimen/font_45"
+                    android:text="万绣莊花边" />
+                <ImageView
+                    style="@style/InputSelectIcon" />
+                <TextView style="@style/InputSelectLine" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/InputSelectContainer"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp">
+                <TextView style="@style/LineX_dddddd"/>
+                <TextView style="@style/InputSelect"
+                    android:textSize="@dimen/font_45"
+                    android:text="辅料/花边、辅料/纽扣、辅料/拉链"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+                <ImageView
+                    style="@style/InputSelectIcon" />
+                <TextView style="@style/InputSelectLine" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_36"
+                    android:textColor="@color/black_555555"
+                    android:text="如果需要添加更多主营产品，请先"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_36"
+                    android:textColor="@color/red_e82c1d"
+                    android:text="购买会员"/>
+            </LinearLayout>
+
+            <RelativeLayout style="@style/InputSelectContainer"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp">
+                <TextView style="@style/LineX_dddddd"/>
+                <TextView style="@style/InputSelect"
+                    android:textSize="@dimen/font_45"
+                    android:text="余额：9895.56元" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/font_36"
+                    android:layout_marginRight="20dp"
+                    android:text="提现"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray_999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView style="@style/InputSelectLine" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/InputSelectContainer"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp">
+                <TextView style="@style/LineX_dddddd"/>
+                <TextView style="@style/InputSelect"
+                    android:textSize="@dimen/font_45"
+                    android:text="营业执照：1213000000567"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+                <TextView style="@style/InputSelectLine" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/InputSelectContainer"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp">
+                <TextView style="@style/LineX_dddddd"/>
+                <TextView style="@style/InputSelect"
+                    android:textSize="@dimen/font_45"
+                    android:text="区域：中大纺织商圈"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+                <TextView style="@style/InputSelectLine" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/InputSelectContainer"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp">
+                <TextView style="@style/LineX_dddddd"/>
+                <TextView style="@style/InputSelect"
+                    android:textSize="@dimen/font_45"
+                    android:text="商铺编号：X1029"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+                <TextView style="@style/InputSelectLine" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/InputSelectContainer"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp">
+                <TextView style="@style/LineX_dddddd"/>
+                <TextView style="@style/InputSelect"
+                    android:textSize="@dimen/font_45"
+                    android:text="商铺名称：万绣莊花边"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+                <ImageView
+                    style="@style/InputSelectIcon" />
+                <TextView style="@style/InputSelectLine" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView style="@style/LineX_b2b2b2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:textSize="@dimen/font_45"
+                    android:textColor="@color/red_e82c1d"
+                    android:gravity="center"
+                    android:background="@color/white_ffffff"
+                    android:text="退出"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
